@@ -1,0 +1,36 @@
+﻿@model List<musicmanagerVCMD12.Models.Musician>
+
+<br /><br />
+
+<div>
+    <a href="@Url.Action("Index", "Home")" class="btn btn-primary">Add Musician</a>
+</div>
+
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Profile Picture</th>
+                <th>Musician Name</th>
+                <th>Genre</th>
+                <th>Booking Fee</th>
+                <th>Manage Musician</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (musicmanagerVCMD12.Models.Musician MusicianObj in Model)
+            {
+            <tr>
+                <td><img class="profilePicture" src="@MusicianObj.FilePath" alt="@MusicianObj.MusicianName" /></td>
+                <td>@MusicianObj.MusicianName</td>
+                <td>@MusicianObj.Genre</td>
+                <td>@MusicianObj.BookingFee</td>
+                <td>
+                    <span>@Html.ActionLink("Edit", "Index", "Home", new { id = MusicianObj.RowKey}, new { })</span>
+                    <span>@Html.ActionLink("Delete", "Delete", "Home", new { id = MusicianObj.RowKey }, new { })</span>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>

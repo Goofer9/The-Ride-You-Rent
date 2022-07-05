@@ -1,0 +1,28 @@
+﻿@model musicmanagerVCMD12.Models.Musician
+
+<div>
+    <a href="@Url.Action("Get", "Home")">View Musicians</a>"
+</div>
+
+<div>
+    @using (Html.BeginForm("Index", "Home", new { id = Model.RowKey }, FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        <div class="form-group">
+            <label for="MusicianName">Musician Name</label>
+            <input type="text" class="form-control" id="MusicianName" name="MusicianName" placeholder="Musician Name" value="@Model.MusicianName">
+        </div>
+        <div class="form-group">
+            <label for="Genre">Genre </label>
+            <input type="text" class="form-control" id="Genre" name="Genre" placeholder="Genre" value="@Model.Genre">
+        </div>
+        <div class="form-group">
+            <label for="BookingFee">Booking Fee</label>
+            <input type="text" class="form-control" id="BookingFee" name="BookingFee" placeholder="Booking Fee" value="@Model.BookingFee">
+        </div>
+        <div class="form-group">
+            <label for="uploadFile">Profile Picture</label>
+            <input type="file" class="form-control-file" id="uploadFile" name="uploadFile">
+        </div>
+        <input type="submit" class="btn btn-success" value="Submit" />
+    }
+</div>

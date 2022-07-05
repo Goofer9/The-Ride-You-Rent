@@ -1,0 +1,25 @@
+﻿<Window x:Class="Time_Management_App.Registration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Time_Management_App"
+        mc:Ignorable="d"
+        Title="Registration" Height="582" Background="BlueViolet" Width="594">
+    <Grid>
+
+        <Button Content="Register" HorizontalAlignment="Left" Margin="233,492,0,0" VerticalAlignment="Top" Background="Azure" Height="33" Width="100" Click="Button_Click"/>
+        <TextBox HorizontalAlignment="Left" Margin="354,45,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Background="Aquamarine" Width="186" Height="41"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="34,45,0,0" VerticalAlignment="Top" Background="Azure" Height="33" Width="auto"/>
+        <TextBox HorizontalAlignment="Left" Margin="353,125,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Background="Aquamarine" Width="187" Height="41"/>
+        <Label Content="Surname" HorizontalAlignment="Left" Margin="34,133,0,0" VerticalAlignment="Top" Background="Azure" Height="33" Width="auto"/>
+        <Label Content="Student Number" HorizontalAlignment="Left" Margin="34,205,0,0" VerticalAlignment="Top" Background="Azure" Width="auto" Height="33"/>
+        <TextBox HorizontalAlignment="Left" Margin="354,205,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Background="Aquamarine" Width="186" Height="41"/>
+        <Label Content="Email Address" HorizontalAlignment="Left" Margin="34,278,0,0" VerticalAlignment="Top" Background="Azure" Width="auto" Height="33"/>
+        <TextBox HorizontalAlignment="Left" Margin="354,278,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Background="Aquamarine" Width="186" Height="41" TextChanged="TextBox_TextChanged"/>
+        <Label Content="Create Password" HorizontalAlignment="Left" Margin="34,356,0,0" VerticalAlignment="Top" Background="Aquamarine" Width="111" Height="33"/>
+        <TextBox HorizontalAlignment="Left" Margin="354,356,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Background="Aquamarine" Width="186" Height="41"/>
+        <Label Content="Create Password" HorizontalAlignment="Left" Margin="34,356,0,0" VerticalAlignment="Top" Background="Azure" Width="auto" Height="33"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,17 @@
+﻿<Window x:Class="Time_Management_App.Window1" 
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Time_Management_App"
+        mc:Ignorable="d"
+        Title="Login Window" Height="473" BorderThickness="6" Background="BlueViolet" Width="475">
+    <Grid>
+        <Button Content="login" HorizontalAlignment="Left" Margin="161,372,0,0" VerticalAlignment="Top" FontWeight="Black" Background="Azure" Height="30" Width="80"/>
+        <TextBox x:Name="txt_username" HorizontalAlignment="Left" Margin="232,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Background="Aquamarine" Width="186" Height="46"/>
+        <Label Content="User Name" HorizontalAlignment="Left" Margin="20,118,0,0" VerticalAlignment="Top" FontWeight="Bold" Background="Azure" Height="33" Width="auto"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="20,252,0,0" VerticalAlignment="Top" FontWeight="Bold" Background="Azure" Width="auto" Height="33"/>
+        <PasswordBox x:Name="txt_pwd" HorizontalAlignment="Left" Margin="232,239,0,0" VerticalAlignment="Top" Width="186" Background="Aquamarine" Height="46" MaxLength="25" PasswordChar="" ToolTip="enter the password"/>
+
+    </Grid>
+</Window>

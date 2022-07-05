@@ -1,0 +1,17 @@
+﻿<Window x:Class="Login_Window.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Login_Window"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="481" Width="841">
+    <Grid>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="361,342,0,0" VerticalAlignment="Top" FontWeight="Black" Height="37" Width="110"/>
+        <TextBox HorizontalAlignment="Left" Margin="314,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" Height="46"/>
+        <Label Content="Student Number" HorizontalAlignment="Left" Margin="355,119,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="30" Width="121"/>
+        <TextBox HorizontalAlignment="Left" Margin="314,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" Height="46"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="376,253,0,0" VerticalAlignment="Top" FontWeight="Bold" Width="80" Height="30"/>
+
+    </Grid>
+</Window>
